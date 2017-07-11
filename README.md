@@ -1,2 +1,3 @@
-# rafa-teixeira.github.io
-Rafa Teixeira
+# Rafa Teixeira
+#### Desenvolvedor Front-End 
+#### Web Designer
