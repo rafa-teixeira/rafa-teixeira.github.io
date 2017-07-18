@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -8,19 +8,40 @@ body {
 	color: #313131;
 }
 
+.header-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-logo {
+	max-width: 60px;
+	height: 80px;
+	margin-top: 15px;
+}
+
 .rafa-teixeira {
-	font-size: 2.3em;
+	font-size: 2.2em;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
 .sub__rafa-teixeira {
-	font-size: 1.175em;
+	font-size: 1.1em;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.3em;
 	margin: 0 0 3px 0;
 	text-transform: uppercase;
 	opacity: .8;
 }
 
+.sub__rafa-teixeira:last-child {
+	margin-bottom: 50px;
+}
+
 .provisorio {
+	margin-bottom: 50px;
 	text-align: justify;
 	line-height: 1.5em;
 	opacity: .8;
@@ -46,4 +67,43 @@ body {
 
 .contato .fa {
 	margin-right: 10px;
+}
+
+
+
+@media (min-width: 360px) {
+
+	body {
+		height: 100vh;
+	}
+
+}
+
+
+@media (min-width: 768px) {
+
+	.header-container {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.image-logo {
+		max-width: 100px;
+		height: 130px;
+		margin-right: 15px;
+	}
+
+	.sub__rafa-teixeira:last-child {
+		margin-bottom: 15px;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.header-container {
+		justify-content: flex-start;
+	}
+
 }
